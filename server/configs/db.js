@@ -11,4 +11,7 @@ const connectDB = async () =>{
     }
 }
 
+
 export default connectDB;
+
+// edited this file today and done changes accordingly
