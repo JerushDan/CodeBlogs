@@ -28,7 +28,7 @@ export const addBlog = async (req, res)=>{
             path: response.filePath,
             transformation: [
                 {quality: 'auto'}, // Auto compression of
-                {format: 'webp'},  // Convert to modern format
+                {format: 'webp'},  // Convert to modern format 
                 {width: '1280'}    // Width resizing
             ]
         });
@@ -124,6 +124,7 @@ export const generateContent = async (req, res)=>{
     }
 
 }
+
 
 
 
