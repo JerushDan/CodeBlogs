@@ -9,7 +9,7 @@ export const addBlog = async (req, res)=>{
         const {title, subTitle, description, category, isPublished} = JSON.parse(req.body.blog);
         const imageFile = req.file;
 
-        // Check if all fields are present
+        // Check if all fields are present or not
         if(!title || !description || !category || !imageFile){
             return res.json({success: false, message: "Missing required fields" })
         }
@@ -124,3 +124,4 @@ export const generateContent = async (req, res)=>{
     }
 
 }
+
