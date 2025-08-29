@@ -27,7 +27,7 @@ export const addBlog = async (req, res)=>{
         const optimizedImageUrl = imagekit.url({
             path: response.filePath,
             transformation: [
-                {quality: 'auto'}, // Auto compression
+                {quality: 'auto'}, // Auto compression of
                 {format: 'webp'},  // Convert to modern format
                 {width: '1280'}    // Width resizing
             ]
@@ -122,4 +122,5 @@ export const generateContent = async (req, res)=>{
     } catch (error) {
         res.json({success: false, message: error.message})
     }
+
 }
