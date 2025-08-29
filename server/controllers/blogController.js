@@ -16,7 +16,7 @@ export const addBlog = async (req, res)=>{
 
         const fileBuffer = fs.readFileSync(imageFile.path)
 
-        // Upload Image to ImageKit
+        // Upload Image to ImageKit 
         const response = await imagekit.upload({
             file: fileBuffer,
             fileName: imageFile.originalname,
@@ -124,4 +124,5 @@ export const generateContent = async (req, res)=>{
     }
 
 }
+
 
