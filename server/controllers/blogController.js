@@ -23,7 +23,7 @@ export const addBlog = async (req, res)=>{
             folder: "/blogs"
         })
 
-        // optimization through imagekit URL transformation
+        // optimization through imagekit URL transformation g
         const optimizedImageUrl = imagekit.url({
             path: response.filePath,
             transformation: [
@@ -124,5 +124,6 @@ export const generateContent = async (req, res)=>{
     }
 
 }
+
 
 
