@@ -10,5 +10,6 @@ const auth = (req, res, next)=>{
         res.json({success: false, message: "Invalid token"})
     }
 }
+   
 
 export default auth;
