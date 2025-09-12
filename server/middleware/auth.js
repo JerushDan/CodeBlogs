@@ -9,11 +9,12 @@ const auth = (req, res, next)=>{
     } catch (error) {
         res.json({success: false, message: "Invalid token"})
     }
-}
+}   
    
 
 export default auth; 
     
+
 
 
 
