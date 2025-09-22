@@ -7,4 +7,5 @@ var imagekit = new ImageKit({
     urlEndpoint : process.env.IMAGEKIT_URL_ENDPOINT
 });
 
-export default imagekit;
+
+export default imagekit;   
