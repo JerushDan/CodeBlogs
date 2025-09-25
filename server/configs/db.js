@@ -8,7 +8,7 @@ const connectDB = async () =>{
         await mongoose.connect(`${process.env.MONGODB_URI}/quickblog`)
     } catch (error) {
         console.log(error.message);
-    }
+    }  
 }
 
 
@@ -16,5 +16,6 @@ export default connectDB;
 
 // edited this file today and done changes 
 //
+
 
 
