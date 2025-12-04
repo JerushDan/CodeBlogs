@@ -17,7 +17,7 @@ export const adminLogin = async (req, res)=>{
     }
 }
 
-export const getAllBlogsAdmin = async (req, res) =>{
+export const getAllBlogsAdmin = async (req, res) =>{  
     try {
         const blogs = await Blog.find({}).sort({createdAt: -1});
         res.json({success: true, blogs})   
@@ -71,6 +71,7 @@ export const approveCommentById = async (req, res) =>{
     }
 
 }   
+
 
 
 
